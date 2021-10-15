@@ -1,0 +1,31 @@
+#Learn
+
+In the previous exercise, we instructed the computer to perform a single calculation: print(23 + 7). The computer followed the instruction and returned 30 as a result.
+
+However, we can ask the computer to perform more than just one calculation.
+
+In the example below, for example, we instruct the computer to perform two calculations:
+
+print(23 + 7)
+print(10 - 6)
+​
+Output
+30
+4
+
+To display both results we need to use the print() command.
+
+Now let's practice using the print() command with more than one calculation.
+
+#Instructions
+
+Using the print() command, display the results for the following operations:
+
+40 + 4
+200 - 25
+
+Click the Submit Answer button when you're ready to check your answer.
+
+###Source Code###
+print(40+4)
+print(200-25)
