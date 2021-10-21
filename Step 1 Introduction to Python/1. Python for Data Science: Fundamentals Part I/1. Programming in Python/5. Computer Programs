@@ -1,0 +1,38 @@
+#Learn
+
+In the previous exercise, we gave the computer three instructions:
+
+print(30 + 10 + 40)
+print(4)
+print(-3)
+Collectively, we call all these instructions code. We call each line of instruction a line of code.
+
+When we write code, we program the computer to do something. For this reason, we also call the code we write a computer program (or a program). The program we wrote in the previous exercise had three lines of code, but a program can be as small as one line.
+
+The code we write serves as input to the computer. We call the result of executing the code output.
+
+img
+As we've learned, we can display the output using the print() command. Note, however, that Python executes the code regardless of whether we use print() or not. In the example below, we see the output of 2 + 3 is not displayed because we did not specify print().
+
+2 + 3
+print(5 + 4)
+​
+Output
+9
+Now let's practice writing more code. On the next screen, we'll learn about code comments.
+
+#Instructions
+
+Using the print() command, write a program that has three lines of code and does the following:
+
+Displays the result of 34 + 16
+Displays the number 34
+Displays the number -34
+Run the program you wrote by clicking the Run Code button.
+
+Check the program you wrote by clicking the Submit Answer button.
+
+###Source Code###
+print(34 + 16)
+print(34)
+print(-34)
