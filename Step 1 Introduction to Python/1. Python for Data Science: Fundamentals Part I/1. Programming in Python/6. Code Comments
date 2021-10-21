@@ -1,0 +1,53 @@
+#Learn
+
+The computer executes code from the first line downwards and ignores blank lines.
+
+print(5 + 1)
+​
+print(8 - 7)
+​
+Output
+6
+1
+Besides blank lines, the computer also ignores any sequence of characters that comes to the right of the # symbol. In the example below, we use # before print(5 + 1), and we see the output of print(5 + 1) no longer displays — this is because print(5 + 1) isn't executed when # precedes it.
+
+#print(5 + 1)
+​
+print(8 - 7)
+​
+Output
+1
+The sequence of characters that follows the # symbol is called a code comment. We can use code comments to add information about our code:
+
+print(5 + 1)
+​
+print(8 - 7) # This line outputs 1
+​
+Output
+6
+1
+Another way we can use code comments is adding a general description at the beginning of our program.
+
+# Test program
+print(5 + 1)
+​
+print(8 - 7)
+​
+Output
+6
+1
+Now let's practice using code comments.
+
+#Instructions
+
+In the code editor on the right, we already added these three lines of code:
+
+#print(34 + 16)
+#print(34)
+#print(-34)
+Uncomment these three lines of code by removing the # symbols, and then click the Submit Answer button.
+
+###Source Code###
+print(34 + 16)
+print(34)
+print(-34)
