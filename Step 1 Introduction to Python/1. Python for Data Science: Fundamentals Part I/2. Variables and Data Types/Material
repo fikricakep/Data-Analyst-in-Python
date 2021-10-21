@@ -1,0 +1,63 @@
+1 > Saving Values:
+  #Learn
+  In this lesson, we'll learn how to save values, and how to work with numerical and text data. To get the most out of this lesson, you'll need to know the basics of Python programming and how to perform arithmetical operations using Python.
+  Let's say we want to save the result of an arithmetical operation. For instance, (8 + 2) * 2 equals 20, and we want to save 20. This is the code we need to run to save 20:
+  result = 20
+  If we print the name result, the output is 20:
+  result = 20
+  print(result)
+  ​
+  Output
+  20
+  We can also directly save (8 + 2) * 2 instead of saving 20.
+  result = (8 + 2) * 2
+  print(result)
+  ​
+  Output
+  20
+  Notice, however, that print(result) outputs 20, not (8 + 2) * 2. This is because the computer first calculates (8 + 2) * 2 and then saves the result 20 to result.
+  Now let's do a quick exercise and resume this discussion on the next screen.
+  #Instructions
+  Save the result of (42 - 11) * 22 to result.
+  Print result.
+  ###Source Code###
+  result = (42-11)*22
+  print(result)
+2 > Variables
+  #Learn
+  Earlier, we saved 20 to result.
+  result = 20
+  When we run the code result = 20, the value 20 gets saved in the computer memory. The computer memory has many storage locations, and 20 gets saved to one particular location.
+  img
+  The storage location where we saved 20 has a unique identifier, and we can use it to access 20. The name of the identifier is result; we named it that way when we ran the code result = 20. We can use the identifier result to access 20 in other lines of code:
+  result = 20
+  print(result)
+  print(result + 10)
+  ​
+  Output
+  20
+  30
+  The storage location for 20 is more commonly known as a variable. When we ran the code result = 20, we stored 20 in a variable (storage location) named result, so result is a variable name.
+  Note that we need to write the variable name to the left of the = operator and the value we want to store to the right. So if we want to store the value 20 to a variable named result, we must write result = 20, not 20 = result.
+  We chose the name result arbitrarily, but we could have chosen something different:
+  another_name = 20
+  print(another_name)
+  print(another_name + 10)
+  ​
+  Output
+  20
+  30
+  Now let's practice using variables.
+  #Instructions
+  Store the value 15 in a variable named a_value.
+  Store the result of (25 - 7) * 17 to a variable named a_result.
+  Using the print() command, display the following:
+  The value stored in the a_value variable.
+  The result of adding 12 to the variable a_result.
+  The result of adding a_value to a_result.
+  ###Source Code###
+  a_value = 15
+  a_result = (25 - 7) * 17
+  print(a_value)
+  print(a_result + 12)
+  print(a_value + a_result)
