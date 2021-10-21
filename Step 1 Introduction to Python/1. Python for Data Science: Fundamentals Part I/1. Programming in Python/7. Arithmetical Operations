@@ -1,0 +1,52 @@
+#Learn
+
+Previously, we wrote programs that only performed addition and subtraction. We can also perform multiplication and division in Python. To perform multiplication, we need to use the * character. For instance, this is how we multiply 3 by 2:
+
+print(3 * 2)
+​
+Output
+6
+To perform division, we use the / character. This is how we divide 3 by 2:
+
+print(3 / 2)
+​
+Output
+1.5
+We can also perform exponentiation (raising a number to a power) by using **. For example, this is how we can raise 4 to the power of 2 (in mathematical notation, we'd write this as 
+4
+2
+).
+
+print(4 ** 2)
+​
+Output
+16
+The arithmetical operations we do in Python follow the usual order of operations we know from mathematics. Python calculates parentheses first, then exponentiation, then division and multiplication, and finally addition and subtraction.
+
+print(4 + 2 * 10)
+print((4 + 2) * 10)
+​
+Output
+24
+60
+Looking at the code example above, we can deduce from the first operation (4 + 2 * 10) and its corresponding result (24) that multiplication precedes addition. However, for the second operation ((4 + 2) * 10), the addition is calculated first because this time it's surrounded by parentheses. Consequently, the result is 60.
+
+So far, we've used space characters between numbers and operators (+, -, *, /, ** are operators). For instance, we've used 4 + 5 instead of 4+5. Both 4 + 5 and 4+5 will run correctly in Python; however, we encourage you to use spaces in your own code because it improves readability.
+
+#Instructions
+
+Write a program with three lines of code that performs the following arithmetical operations and displays the results (you'll need to use the print() command to display the results):
+16
+×
+10
+48
+÷
+5
+5
+3
+ (make sure you don't type 5^3 because ^ is not the symbol for exponentiation)
+
+###Source Code###
+print(16*10)
+print(48/5)
+print(5**3)
