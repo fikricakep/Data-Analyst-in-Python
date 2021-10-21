@@ -1,0 +1,26 @@
+#Learn
+
+Previously, we sent the computer two instructions and wrote each on a separate line. If we were to put them both on the same line, we'd get an error:
+
+print(23 + 7) print(10 - 6)
+Output
+    print(23 + 7) print(10 - 6)
+                  ^
+SyntaxError: invalid syntax
+print(23 + 7) print(10 - 6) resulted in text describing a syntax error. This is because all programming languages — Python included — have syntax rules. Each line of instructions has to comply with these rules.
+
+This is similar to the syntax rules we follow in verbal languages. If you want to tell a friend that you like data science in English, you need to follow the syntax rules to correctly convey your message. Your friend will understand "I like data science," but not "science I data like." Similarly, the computer didn't understand two print() statements on one line because the syntax was incorrect.
+
+Running into errors is common when we're programming, and we'll constantly learn about errors and how to fix them. Now let's practice giving the computer more instructions.
+
+#Instructions
+
+Run the instructions below in the code editor on the right of the screen. Remember that each instruction must be on a separate line.
+print(30 + 10 + 40)
+print(4)
+print(-3)
+
+###Source Code###
+print(30 + 10 + 40)
+print(4)
+print(-3)
