@@ -1,7 +1,9 @@
 1 > Saving Values:
   #Learn
-  In this lesson, we'll learn how to save values, and how to work with numerical and text data. To get the most out of this lesson, you'll need to know the basics of Python programming and how to perform arithmetical operations using Python.
-  Let's say we want to save the result of an arithmetical operation. For instance, (8 + 2) * 2 equals 20, and we want to save 20. This is the code we need to run to save 20:
+  In this lesson, we'll learn how to save values, and how to work with numerical and text data. To get the most out of this lesson,
+  you'll need to know the basics of Python programming and how to perform arithmetical operations using Python.
+  Let's say we want to save the result of an arithmetical operation. For instance, (8 + 2) * 2 equals 20, and we want to save 20.
+  This is the code we need to run to save 20:
   result = 20
   If we print the name result, the output is 20:
   result = 20
@@ -23,13 +25,16 @@
   ###Source Code###
   result = (42-11)*22
   print(result)
+  
 2 > Variables
   #Learn
   Earlier, we saved 20 to result.
   result = 20
-  When we run the code result = 20, the value 20 gets saved in the computer memory. The computer memory has many storage locations, and 20 gets saved to one particular location.
+  When we run the code result = 20, the value 20 gets saved in the computer memory. The computer memory has many storage locations,
+  and 20 gets saved to one particular location.
   img
-  The storage location where we saved 20 has a unique identifier, and we can use it to access 20. The name of the identifier is result; we named it that way when we ran the code result = 20. We can use the identifier result to access 20 in other lines of code:
+  The storage location where we saved 20 has a unique identifier, and we can use it to access 20. The name of the identifier is result;
+  we named it that way when we ran the code result = 20. We can use the identifier result to access 20 in other lines of code:
   result = 20
   print(result)
   print(result + 10)
@@ -37,8 +42,10 @@
   Output
   20
   30
-  The storage location for 20 is more commonly known as a variable. When we ran the code result = 20, we stored 20 in a variable (storage location) named result, so result is a variable name.
-  Note that we need to write the variable name to the left of the = operator and the value we want to store to the right. So if we want to store the value 20 to a variable named result, we must write result = 20, not 20 = result.
+  The storage location for 20 is more commonly known as a variable. When we ran the code result = 20, we stored 20 in a variable (storage location) named result,
+  so result is a variable name.
+  Note that we need to write the variable name to the left of the = operator and the value we want to store to the right.
+  So if we want to store the value 20 to a variable named result, we must write result = 20, not 20 = result.
   We chose the name result arbitrarily, but we could have chosen something different:
   another_name = 20
   print(another_name)
@@ -61,3 +68,257 @@
   print(a_value)
   print(a_result + 12)
   print(a_value + a_result)
+
+3 > Variable Names
+  #Learn
+  On the previous screen, we learned that we can choose different names for variables. However, these names must follow a number of syntax rules.
+  For instance, naming a variable a result will output a syntax error because we can't use space characters in variable names.
+  a result = 30
+  Output
+    a result = 20
+      ^
+  SyntaxError: invalid syntax
+  These are the two syntax rules we need to follow when we're naming variables:
+
+  We must use only letters, numbers, or underscores (we can't use apostrophes, hyphens, spaces, etc.).
+  Variable names can't begin with a number.
+  Note that variable names are case sensitive, which means that a variable named result is different than a variable named Result:
+  result = 2
+  result = 70
+  print(result)
+  print(Result)
+
+  Output
+  2
+  70
+  Now, let's try to correct a few variable names.
+  #Instructions
+  In the code editor on the right, we attempted to store 34000 in a variable named old-income and 40000 in a variable named new income.
+  But both of these variable names cause syntax errors, so we commented-out the code.
+
+  Change the variable name old-income to old_income to prevent a syntax error.
+  Change the variable name new income to new_income to prevent a syntax error.
+  Remove the # from each line so that the code will run, then run the code.
+  ###Source Code###
+  old_income = 34000
+  new_income = 40000
+
+4 > Updating Variables
+  #Learn
+  We can update the value stored in a variable. Below, we first store 30 in the variable x, and then we update x to store 70 instead.
+  x = 30
+  print(x)
+  x = 70
+  print(x)
+  Output
+  30
+  70
+  We can also update a variable by doing arithmetical operations:
+  x = 30
+  print(x)
+  print(x + 70)
+  x = x + 70
+  print(x)
+  Output
+  30
+  100
+  100
+  Notice the following in the code above:
+
+  The variable x initially stores a value of 30.
+  x + 70 evaluates to 100 because x stores a value of 30, so x + 70 becomes 30 + 70.
+  When we run x = x + 70, x gets updated to store the result of x + 70, which is 100. Running x = x + 70 is the same as running x = 30 + 70 because x stores 30.
+  print(x) outputs 100 after we run x = x + 70.
+  Now let's practice updating variables.
+  
+  #Instructions
+  Update the variable income by adding 6000 to its current value. The variable income is already shown in the code editor on the right.
+  Print income.
+  
+  ###Source Code###
+  income = 34000
+  income = income + 6000
+  print(income)
+  
+  
+5 > Syntax Shortcuts
+  #Learn
+  On the previous screen, we used the code x = x + 70 to update x from 30 to 100.
+  x = 30
+  print(x)
+  print(x + 70)
+  x = x + 70
+  print(x)
+  Output
+  30
+  100
+  100
+  There are several syntax shortcuts we can use to update a variable when we're doing arithmetical operations.
+  In the code above, for instance, we can write x += 70 instead of x = x + 70:
+  x = 30
+  x += 70
+  print(x)
+  Output
+  100
+  Notice that we can only use these operators (+=, -=, *=, /=, **=) to update a variable.
+  This means the variable we're updating must already store a value. In other words, the variable must already be defined.
+  When we try to update a variable that we haven't defined, we get an error called NameError.
+  Error
+  y += 10
+  Output
+  NameError: name 'y' is not defined
+  No Error
+  y = 1
+  y += 10
+  print(y)
+  Output
+  11
+  This kind of error is different from a syntax error. y += 10 is correct Python syntax,
+  but the computer returns an error because it can't update a variable that hasn't been defined.
+  Whenever the syntax is correct but the computer still returns an error for one reason or another, we get a runtime error.
+  Notice also that we updated a variable using x = x + 1.
+  In mathematics, x = x + 1 would be a false statement because x can never be equal to x + 1.
+  This tells us that the = operator doesn't have the same meaning as it does in mathematics.
+  In Python, the = operator tells us that the value on the right is assigned to the variable on the left.
+  It doesn't tell us anything about equality. We call = an assignment operator,
+  and we read code like x = 5 as "five is assigned to x" or "x is assigned five," not "x equals five."  
+  
+  #Instructions
+  Assign a value of 20 to a variable named variable_1.
+  Assign a value of 20 to a variable named variable_2.
+  Update the value of variable_2 by adding 10 to its current value. You can take advantage of the += operator.
+  Update the value of variable_1 by multiplying its current value by 4. You can take advantage of the *= operator.
+  Display variable_1 and variable_2 using print().
+  
+  ###Source Code###
+  variable_1 = 20
+  variable_2 = 20
+  variable_2 += 10
+  variable_1 *= 4
+  print(variable_1)
+  print(variable_2)
+
+6 > Integers and Floats
+  #Learn
+  So far, we've only worked with integers like 20, -3, 30, etc. We can also make computations with decimal numbers:
+  print(8.4 + 1.5)
+  print(-0.2 + 1.3)
+  Output
+  9.9
+  1.1
+
+  In mathematics, integers aren't the same as decimal numbers, and Python acknowledges this difference.
+  We can use the type() command to see the type of a value, and confirm that Python distinguishes between integers and decimal numbers:
+  print(type(2))
+  print(type(8.5))
+  Output
+  int
+  float
+  
+  Notice that the integer 2 has the int type, and the decimal number 8.5 has the float type. All integers have the int type, and all decimal numbers have the float type.
+  In computer programming, we classify values into different types — or data types. The type of value offers the computer the required
+  information about how to process that value. Depending on the type, the computer will know how to store a value in memory,
+  or what operations we can and can't perform on a value.
+  
+  int and float values have different types, but we can mix the values together in arithmetical operations.
+  So we're not limited, for instance, to adding an int value only to another int value — we can add an int value to a float value:
+  print(3 + 2.5)
+  print(2.5 * 4)
+  Output 
+  5.5
+  10
+  
+  #Instructions
+  Assign the integer 10 to a variable named variable_1.
+  Assign the float 2.5 to a variable named variable_2.
+  Update the value of variable_1 by adding the float 6.5 to its current value. You can use the += operator.
+  Update the value of variable_2 by multiplying its current value by the integer 2. You can use the *= operator.
+  Display variable_1 and variable_2 using print().
+  
+  ###Source Code###
+  variable_1 = 10
+  variable_2 = 2.5
+  variable_1 += 6.5
+  variable_2 *= 2
+  print(variable_1)
+  print(variable_2)
+
+7 > Conversion Between Types
+  #Learn
+  It's possible to convert a float to an integer — and vice versa. To convert an integer to a float, we can use the float() command:
+  print(float(10))
+  Output
+  10.0
+  
+  To convert a float to an integer, we can use the int() command:
+  print(int(4.3))
+  Output
+  int
+  float
+  Output
+  4
+  
+  Notice the int() command rounded 4.3 down to 4. int() will always round a float down, even if the number after the decimal point is greater than five.
+  print(int(4.99))
+  Output 
+  5.5
+  10
+  Output 4
+  
+  If we want to round off a number, we can instead use the round() command, which has more flexibility and can also round up:
+  print(round(4.99))
+  print(round(4.5))
+  print(round(4.3))
+  Output
+  5
+  4
+  4
+  Note that it's possible to combine commands. For instance, we encompassed a round() command within a print() command in each of the examples above.
+  
+  Note that running the round() command doesn't change the value stored by a variable unless we assign the rounded value back to the variable:
+  a_value = 3.7
+  print(round(a_value))
+  print(a_value)
+  ​
+  a_value = round(a_value)
+  print(a_value)
+  Output
+  4
+  3.7
+  4
+  
+  #Instructions
+  Assign the value 13.9 to a variable named variable_a.
+  Assign the value 2.8 to a variable named variable_b.
+  Round variable_a using the round() command, and assign back the rounded value to variable_a.
+  Convert variable_b from a float to an integer using the int() command, and assign back the converted value to variable_b.
+  Display variable_a and variable_b using the print() command.
+  
+  ###Source Code###
+  variable_a = 13.9
+  variable_b = 2.8
+  variable_a = round(variable_a)
+  variable_b = int(variable_b)
+  print(variable_a)
+  print(variable_b)
+
+8 > Strings
+  #Learn
+  #Instructions
+  ###Source Code###
+
+
+9 > Escaping Special Characters
+  #Learn
+  #Instructions
+  ###Source Code###
+  
+10 > String Operations
+  #Learn
+  #Instructions
+  ###Source Code###
+
+11 > Next Steps
+  #Learn
+  #Instructions
+  ###Source Code###
